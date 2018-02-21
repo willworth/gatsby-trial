@@ -1,0 +1,8 @@
+cache never touch 
+public  static site will be generated into.
+src where we edit
+gatsby-config.js tells us what plugins we're gonna be using
+Try <br />. All self-closing tags must have the final slash in React.
+<br />
+
+helmet sets meta data
