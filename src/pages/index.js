@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'gatsby-link'
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <div style={{ color: `grey` }}>
    <h1>Hello Gatsby!</h1>
    <p>This is the demo site.  Pulling from index.js </p>   
@@ -9,6 +9,15 @@ const IndexPage = () => (
     <Link to="/page-2/">Go to page 2</Link>
     <br />
     <Link to="/about">Go to the about page</Link>
+    <h2>Index</h2>
+    {data.allMarkdownRemark.edges.map(post =>(
+      <Link
+      key={post.node.id}
+      href={post.node.frontmatter.path}>
+      {post.node.frontmatter.title}<br/>
+      </Link>
+    ))}
+
   </div>
 )
 
