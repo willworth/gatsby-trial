@@ -9,6 +9,8 @@ const IndexPage = ({ data }) => (
     <Link to="/page-2/">Go to page 2</Link>
     <br />
     <Link to="/about">Go to the about page</Link>
+    <br />
+    <br />
     <h2>Index</h2>
     <ul>
       {data.allMarkdownRemark.edges.map(post => (
@@ -24,7 +26,10 @@ const IndexPage = ({ data }) => (
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(limit: 10) {
+    allMarkdownRemark(
+      limit: 10
+      filter: { frontmatter: { draft: { eq: false } } }
+    ) {
       edges {
         node {
           frontmatter {

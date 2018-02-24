@@ -1,8 +1,8 @@
 ---
+
 path: '/hello-world'
 title: 'Hello World!'
 draft: false
-// #TODO Frontmatter  could have boolean draft status for eg...  
 ---
 
 # Title!
