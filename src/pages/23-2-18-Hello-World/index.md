@@ -3,6 +3,7 @@
 path: '/hello-world'
 title: 'Hello World!'
 draft: false
+date: '2018-02-23'
 ---
 
 # Title!

@@ -2,6 +2,7 @@
 path: '/hello-future'
 title: 'Hello Future!'
 draft: true
+date: '2018-02-24'
 ---
 
 # Future post for Scott's tutorial!
