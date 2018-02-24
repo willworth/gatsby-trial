@@ -1,6 +1,7 @@
 ---
 path: '/hello-future'
 title: 'Hello Future!'
+draft: true
 ---
 
 # Future post for Scott's tutorial!
